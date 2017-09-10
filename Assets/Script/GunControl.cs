@@ -5,37 +5,30 @@ using UnityEngine.EventSystems;
 
 public class GunControl : MonoBehaviour {
 
-	public Transform rightMagic;
-	public Transform leftMagic;
 
-	public Transform rightExplosion;
-	public Transform leftExplosion;
+	public GameObject leftMagic;
+	public GameObject rightMagic;
 
-	ParticleSystem rightEffectPs;
-	ParticleSystem leftEffectPs;
+	public Transform leftMarker;
+	public Transform rightMarker;
 
-	ParticleSystem rightExplosionPs;
-	ParticleSystem leftExplosionPs;
+	ParticleSystem leftMarkerPs;
+	ParticleSystem rightMarkerPs;
+
 
 	public float attackTime;
+	public float power = 20.0f;
+	public float freezeTime = 0.5f;
 
 	void Start () 
 	{
-		if (rightMagic) 
+		if (leftMarker) 
 		{
-			rightEffectPs = rightMagic.GetComponent<ParticleSystem>();
+			leftMarkerPs = leftMarker.GetComponent<ParticleSystem>();
 		}
-		if (rightExplosion) 
+		if (rightMarker) 
 		{
-			rightExplosionPs = rightExplosion.GetComponent<ParticleSystem>();
-		}
-		if (leftMagic) 
-		{
-			leftEffectPs = leftMagic.GetComponent<ParticleSystem>();
-		}
-		if (leftExplosion) 
-		{
-			leftExplosionPs = leftExplosion.GetComponent<ParticleSystem>();
+			rightMarkerPs = rightMarker.GetComponent<ParticleSystem>();
 		}
 	}
 
@@ -48,18 +41,15 @@ public class GunControl : MonoBehaviour {
 
 		if (isHit == true)
 		{
-			//draw crosshair
-			//Debug.Log("isHit true");
-
 			if (Input.GetButtonDown ("Fire1")) 
 			{
-				StartCoroutine ("AttackTime");
-
-				Instantiate (rightEffectPs, hitInfo.point, transform.rotation);
-
+				Instantiate (leftMarkerPs, hitInfo.point, transform.rotation);
+				GameObject obj = Instantiate (leftMagic);
+				obj.transform.position = gameObject.transform.position;
+				obj.GetComponent<Rigidbody> ().velocity = power * gameObject.transform.forward;
 				//CameraRotate.LeftClickFixe();
 
-				if (hitInfo.transform.name.Contains ("Enemy")) 
+				/*if (hitInfo.transform.name.Contains ("Enemy")) 
 				{
 					Instantiate (rightExplosion, hitInfo.point, transform.rotation);
 					Enemy.DamageByPlayer ();
@@ -73,13 +63,8 @@ public class GunControl : MonoBehaviour {
 				{
 					Instantiate (leftExplosion, hitInfo.point, transform.rotation);
 					Enemy.DamageByPlayer ();
-				}
+				}*/
 			}
 		}
-	}
-	IEnumerator AttackTime()
-	{
-		attackTime = 1.0f;
-		yield return new WaitForSeconds (attackTime);
 	}
 }

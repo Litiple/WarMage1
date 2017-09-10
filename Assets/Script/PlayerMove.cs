@@ -6,21 +6,35 @@ public class PlayerMove : MonoBehaviour {
 
 	//플레이어의 이동속도
 	int speed = 10;
+	float stateTime = 0.0f;
+	float freezeTime = 0.5f;
 
-	// Use this for initialization
+
 	void Start () {
 		
 	}
 	
-	// Update is called once per frame
 	void Update () {
-
-		//A,D 또는 방향키 입력받기
-		float sideMove = Input.GetAxis ("Horizontal");
-		//플레이어 이동
-		transform.Translate (Vector3.right * sideMove * Time.deltaTime * speed);
-
-		//x, y, z축 이동 제한
-		transform.position = new Vector3(Mathf.Clamp(transform.position.x, -5.0f, 5.0f), 85, -48);
+		float sideMove = Input.GetAxis ("Horizontal");		//A,D 또는 방향키 입력받기
+		transform.Translate (Vector3.right * sideMove * Time.deltaTime * speed);  //플레이어 이동
+		transform.position = new Vector3(Mathf.Clamp(transform.position.x, 9.9f, 19.9f), 79, -141.8f); 		//x, y, z축 이동 제한
+		if (Input.GetButtonDown("Fire1") == true) 
+		{
+			StartCoroutine ("Freeze");
+		}
 	}
+
+
+	IEnumerator Freeze()
+		{
+			speed = 0;
+			yield return new WaitForSeconds(freezeTime);
+			speed = 10;
+		}
+			
+	/*void SideMovement ()
+	{
+		float sideMove = Input.GetAxis ("Horizontal");		//A,D 또는 방향키 입력받기
+		transform.Translate (Vector3.right * sideMove * Time.deltaTime * speed);  //플레이어 이동
+	}*/
 }
