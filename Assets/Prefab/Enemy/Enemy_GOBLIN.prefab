@@ -5280,9 +5280,7 @@ GameObject:
   - component: {fileID: 4088067523275614}
   - component: {fileID: 111425415381768752}
   - component: {fileID: 136308380791362110}
-  - component: {fileID: 114431328061849424}
   - component: {fileID: 195442434426732260}
-  - component: {fileID: 114998432564252428}
   - component: {fileID: 114037807852295794}
   m_Layer: 0
   m_Name: Enemy_GOBLIN
@@ -10449,36 +10447,6 @@ MonoBehaviour:
   attackRange: 5
   attackStateMaxTime: 2
   healthPoint: 1
---- !u!114 &114431328061849424
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1989790605641244}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc754ff33ea05d7499889c56a027fa11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animation: {fileID: 111425415381768752}
-  agent: {fileID: 0}
-  stateTime: 0
-  idleStateMaxTime: 2
-  attackRange: 2.5
-  attackStateMaxTime: 2
-  target: {fileID: 0}
-  skillPoint: 10
---- !u!114 &114998432564252428
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1989790605641244}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!136 &136308380791362110
 CapsuleCollider:
   m_ObjectHideFlags: 1
