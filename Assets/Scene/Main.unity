@@ -285,7 +285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy_GOBLINPrefab: {fileID: 1989790605641244, guid: 7c151b5e26e3b8c4cb5aecf362f5385e,
     type: 2}
-  GOBLIN_POOL_SIZE: 50
+  GOBLIN_POOL_SIZE: 150
   CREATE_TIME: 5
   minSpawnPosX: -120
   maxSpawnPosX: 120
