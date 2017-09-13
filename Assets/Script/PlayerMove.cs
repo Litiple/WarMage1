@@ -13,11 +13,11 @@ public class PlayerMove : MonoBehaviour {
 	void Start () {
 		
 	}
-	
+
 	void Update () {
 		float sideMove = Input.GetAxis ("Horizontal");		//A,D 또는 방향키 입력받기
 		transform.Translate (Vector3.right * sideMove * Time.deltaTime * speed);  //플레이어 이동
-		transform.position = new Vector3(Mathf.Clamp(transform.position.x, 9.9f, 19.9f), 79, -141.8f); 		//x, y, z축 이동 제한
+		transform.position = new Vector3(Mathf.Clamp(transform.position.x, -4.5f, 9.5f), 79, -73.4f); 		//x, y, z축 이동 제한
 		if (Input.GetButtonDown("Fire1") == true) 
 		{
 			StartCoroutine ("Freeze");

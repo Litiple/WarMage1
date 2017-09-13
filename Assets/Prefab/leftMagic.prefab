@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 54101533103352186}
   - component: {fileID: 114731569536472622}
   m_Layer: 2
-  m_Name: LeftMagic
+  m_Name: leftMagic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

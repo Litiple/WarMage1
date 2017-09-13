@@ -175,6 +175,6 @@ public class Enemy_GOBLIN : MonoBehaviour {
 
 		yield return new WaitForSeconds(2.0f);
 
-		Destroy (gameObject);
+		gameObject.SetActive(false);
 	}
 }
