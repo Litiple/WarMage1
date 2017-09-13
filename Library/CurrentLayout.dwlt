@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 392}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -43,7 +43,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 950, y: 392}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -111,7 +111,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 342}
   m_MaxSize: {x: 22012, y: 10021}
   vertical: 0
-  controlID: 43
+  controlID: 113
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -161,7 +161,7 @@ MonoBehaviour:
   m_MinSize: {x: 204, y: 342}
   m_MaxSize: {x: 4004, y: 8042}
   vertical: 1
-  controlID: 113
+  controlID: 114
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -392,14 +392,14 @@ MonoBehaviour:
     width: 777
     height: 926
   m_SceneLighting: 1
-  lastFramingTime: 62.34385267811884
+  lastFramingTime: 117.41785604623465
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -12.7, y: 0, z: -3.2}
+    m_Target: {x: 27.050377, y: 19.94313, z: -44.990974}
     speed: 2
-    m_Value: {x: -12.7, y: 0, z: -3.2}
+    m_Value: {x: 27.050377, y: 19.94313, z: -44.990974}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -426,9 +426,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.09587373, y: 0.90407884, z: -0.2994114, w: -0.28948674}
   m_Size:
-    m_Target: 355.40872
+    m_Target: 126.702515
     speed: 2
-    m_Value: 355.40872
+    m_Value: 126.702515
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -469,7 +469,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 64eeffff00000000
+    m_ExpandedIDs: 1afcffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: Enemy Maker
@@ -480,7 +480,7 @@ MonoBehaviour:
         y: 0
         width: 0
         height: 0
-      m_UserData: -8424
+      m_UserData: 13000
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -567,7 +567,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 883c0000
     m_LastClickedID: 15496
-    m_ExpandedIDs: 0000000064270000d02d0000463100003832000046320000603200009c340000663600006e360000c6360000803700007039000072390000
+    m_ExpandedIDs: 0000000056270000fe2a0000f42b0000022c00001c2c00005e2e0000363000003e300000a030000068310000523900005439000056390000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -595,7 +595,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000064270000d02d0000463100003832000046320000603200009c340000663600006e360000c6360000803700007039000072390000
+    m_ExpandedIDs: 0000000056270000fe2a0000f42b0000022c00001c2c00005e2e0000363000003e300000a030000068310000523900005439000056390000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
