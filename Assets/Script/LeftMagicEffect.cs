@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class LeftMagicEffect : MonoBehaviour {
 	public Transform leftExplosion;
-
 	ParticleSystem leftExplosionPs;
+	public float currentTime = 0.0f;
+	public float destroyTime = 4.0f;
 
 	void Start () {
 		if (leftExplosion) 
@@ -13,6 +14,15 @@ public class LeftMagicEffect : MonoBehaviour {
 			leftExplosionPs = leftExplosion.GetComponent<ParticleSystem>();
 		}
 	}
+
+	void Update()
+	{
+		currentTime += Time.deltaTime;
+		if (currentTime > destroyTime) {
+			Destroy (gameObject);
+		}
+	}
+
 
 	void OnCollisionEnter(Collision col)
 	{
