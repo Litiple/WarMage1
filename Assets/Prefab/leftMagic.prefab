@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 54101533103352186}
   - component: {fileID: 114731569536472622}
   m_Layer: 2
-  m_Name: LeftMagic
+  m_Name: leftMagic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99,6 +99,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85999e8982d59fe4bbdba131c74aa98f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentTime: 0
+  destroyTime: 4
+  leftExplosion: {fileID: 4677859018002072, guid: c67f4e8c6e1c9ae46a34e1ac382c850d,
+    type: 2}
 --- !u!135 &135996120040795690
 SphereCollider:
   m_ObjectHideFlags: 1

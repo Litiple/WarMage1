@@ -35,36 +35,26 @@ public class GunControl : MonoBehaviour {
 	void Update () 
 	{
 		
-		Ray ray = new Ray (Camera.main.transform.position, Camera.main.transform.forward);
-		RaycastHit hitInfo;
-		bool isHit = Physics.Raycast (ray, out hitInfo);
+		Ray ray = new Ray (Camera.main.transform.position, Camera.main.transform.forward); //Ray 형성
+		RaycastHit hitInfo; // Ray 충돌지점 정보 
+		bool isHit = Physics.Raycast (ray, out hitInfo); // Ray가 무언가에 부딪혔는지 확인
 
 		if (isHit == true)
 		{
 			if (Input.GetButtonDown ("Fire1")) 
 			{
-				Instantiate (leftMarkerPs, hitInfo.point, transform.rotation);
-				GameObject obj = Instantiate (leftMagic);
-				obj.transform.position = gameObject.transform.position;
-				obj.GetComponent<Rigidbody> ().velocity = power * gameObject.transform.forward;
-				//CameraRotate.LeftClickFixe();
+				ParticleSystem firePs = Instantiate (leftMarkerPs, hitInfo.point, leftMarker.rotation); // 마커를 파티클시스템을 부딪힌 지점에 형성     
+				GameObject obj = Instantiate (leftMagic); // 마법 구를 형성
+				obj.transform.position = gameObject.transform.position; // 마법 구의 위치를 내 카메라의 위치로 이동
+				obj.GetComponent<Rigidbody> ().velocity = power * gameObject.transform.forward; // 마법 구의 Rigidbody에서 Velocity 값을 카메라의 정면을 향하도록 설정
 
-				/*if (hitInfo.transform.name.Contains ("Enemy")) 
-				{
-					Instantiate (rightExplosion, hitInfo.point, transform.rotation);
-					Enemy.DamageByPlayer ();
-
-				}
-			} else if (Input.GetButtonDown ("Fire2")) 
+            } else if (Input.GetButtonDown ("Fire2")) 
 			{
-				Instantiate (leftEffectPs, hitInfo.point, transform.rotation);
-
-				if (hitInfo.transform.name.Contains ("Enemy")) 
-				{
-					Instantiate (leftExplosion, hitInfo.point, transform.rotation);
-					Enemy.DamageByPlayer ();
-				}*/
+				ParticleSystem icePs = Instantiate (rightMarkerPs, hitInfo.point, rightMarker.rotation); // 마커를 파티클시스템을 부딪힌 지점에 형성     
+				GameObject obj2 = Instantiate (rightMagic); // 마법 구를 형성
+				obj2.transform.position = gameObject.transform.position; // 마법 구의 위치를 내 카메라의 위치로 이동
+				//obj2.GetComponent<Rigidbody> ().velocity = power * gameObject.transform.forward; // 마법 구의 Rigidbody에서 Velocity 값을 카메라의 정면을 향하도록 설정
 			}
-		}
+        }
 	}
 }

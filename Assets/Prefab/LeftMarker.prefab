@@ -21,9 +21,8 @@ GameObject:
   - component: {fileID: 4414414903051478}
   - component: {fileID: 198151768582754668}
   - component: {fileID: 199961443217157050}
-  - component: {fileID: 114863299078379018}
   - component: {fileID: 135119436528628552}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: LeftMarker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,19 +42,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114863299078379018
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1510513527595734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58469f9d09f94e44baa642d5aa29735f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leftExplosion: {fileID: 4677859018002072, guid: c67f4e8c6e1c9ae46a34e1ac382c850d,
-    type: 2}
 --- !u!135 &135119436528628552
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -63,7 +49,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1510513527595734}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 6.11
