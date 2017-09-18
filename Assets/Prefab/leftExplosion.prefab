@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4750864572181372}
   - component: {fileID: 198851626518527034}
   - component: {fileID: 199828136566841688}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Debris
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4893687692614736}
   - component: {fileID: 198029003294832252}
   - component: {fileID: 199862820931741442}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ShockWave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,9 +55,9 @@ GameObject:
   - component: {fileID: 4677859018002072}
   - component: {fileID: 198350376414877004}
   - component: {fileID: 199183347804095332}
-  - component: {fileID: 114014720780355510}
-  m_Layer: 0
-  m_Name: LeftExplosion
+  - component: {fileID: 114247602509677922}
+  m_Layer: 11
+  m_Name: leftExplosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 4114486517043408}
   - component: {fileID: 198609459720021480}
   - component: {fileID: 199231635954951422}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Embers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 4060180021442728}
   - component: {fileID: 198486078133211996}
   - component: {fileID: 199553136589842774}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 4532952748466692}
   - component: {fileID: 198948071895442934}
   - component: {fileID: 199447869989270604}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -197,7 +197,7 @@ Transform:
   m_Father: {fileID: 4677859018002072}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114014720780355510
+--- !u!114 &114247602509677922
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -205,7 +205,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1304995379639464}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55a6b186c5372c94eaaf60a778fc6586, type: 3}
+  m_Script: {fileID: 11500000, guid: 3f6e688f8e1f5db4ba76883911e2ec15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   destroyTime: 3

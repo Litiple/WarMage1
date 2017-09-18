@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 199961443217157050}
   - component: {fileID: 114863299078379018}
   - component: {fileID: 135119436528628552}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: LeftMarker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
