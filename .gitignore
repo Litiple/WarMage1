@@ -295,12 +295,12 @@ __pycache__/
 *.xsd.cs
 
 ### Unity ###
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/Assets/AssetStoreTools*
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+Assets/AssetStoreTools*
 
 # Visual Studio 2015 cache directory
 /.vs/
@@ -325,3 +325,5 @@ sysinfo.txt
 *.unitypackage
 
 # End of https://www.gitignore.io/api/unity,csharp
+Library/assetDatabase3
+Library/assetDatabase3
